@@ -278,6 +278,53 @@ p {
   height: 0.9375rem !important;
 }
 
+
+/* Loader section Start */
+.loader_bg {
+  position: fixed;
+  z-index: 9999999;
+  background: #fff;
+  width: 100%;
+  height: 100%;
+}
+
+.loader {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader img {
+  width: 280px;
+}
+
+
+
+/* Brochure Button Start */
+.brochure-btn {
+  display: inline-block;
+  background-color: #45b6b6; /* Devfolio primary blue */
+  color: #ffffff;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.brochure-btn:hover {
+    /* background-color: #2bc0e4;  */
+    color: #fff;
+}
+
+
+
 /* NavBar Section Start  */
 
 #particles-js {
@@ -1058,22 +1105,7 @@ a {
     padding-top: 22.75rem !important;
   }
 
-  .brochure-btn {
-    display: inline-block;
-    background-color: #45b6b6; /* Devfolio primary blue */
-    color: #ffffff;
-    padding: 12px 20px;
-    font-size: 16px;
-    font-weight: bold;
-    border-radius: 8px;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-}
-
-.brochure-btn:hover {
-    /* background-color: #2bc0e4;  */
-    color: #fff;
-}
+  
 
   /* About Section Ends  */
 

@@ -37,6 +37,14 @@
 
 <body class="home" data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0">
 
+        <div class="progress-bar progress" style="width: 0%; display: none;"></div>
+    
+        <!-- loader  -->
+        <div class="loader_bg">
+            <div class="loader"><img src="./assets/img/Gallery/813.svg" alt="#" /></div>
+         </div>
+         <!-- end loader -->
+
     <div class="progress-bar progress" style="width: 0%; display: none;"></div>
 
     <div class="lgx-container ">
@@ -206,7 +214,7 @@
                     <!-- Ship Image Section -->
                     <div class="col-lg-5 text-center aos-init aos-animate" data-aos="fade-left" data-aos-duration="1000"
                         data-aos-anchor-placement="top-bottom">
-                        <img src="assets/img/new_assets/ship.png" alt="Event Ship Image" class="img-fluid medium-ship">
+                        <img src="assets/img/new_assets/chakra1.jpg" alt="Event Ship Image" class="img-fluid medium-ship">
                     </div>
                 </div>
             </div>
@@ -1441,6 +1449,15 @@
     }
 
     animateScheduleItems(document.querySelector('.day-schedule.active'));
+
+    setTimeout(function () {
+        var loaderBg = document.querySelector('.loader_bg');
+        
+        if (loaderBg) {
+            loaderBg.style.display = 'none';     }
+    
+        document.body.style.display = 'block';
+    }, 2000);
 </script>
 
 <script src="assets/js/faq.js"></script>
