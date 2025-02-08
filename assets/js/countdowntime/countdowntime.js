@@ -155,7 +155,7 @@ $(document).ready(function() {
     $('#countdown').countdown100({
         endtimeYear: 2025,
         endtimeMonth: 3,
-        endtimeDate: 21,
+        endtimeDate: 11,
         endtimeHours: 0,
         endtimeMinutes: 0,
         endtimeSeconds: 0
