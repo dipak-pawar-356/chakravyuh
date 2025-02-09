@@ -1078,8 +1078,8 @@ a {
 
 @media (max-width: 991px) {
   .navbar-brand img {
-    height: 140px !important;
-    width: 140px !important;
+    height: 120px !important;
+    width: 120px !important;
   }
 
   .header_wrapper .navbar {
@@ -1197,8 +1197,8 @@ a {
 
 @media (max-width: 767px) {
   .navbar-brand img {
-    height: 140px !important;
-    width: 140px !important;
+    height: 120px !important;
+    width: 120px !important;
   }
 
   .header_wrapper .navbar {
@@ -1272,10 +1272,6 @@ a {
   #prizes .hack-card:hover .hack-shadowTwo{
     transform: translateY(40px);
   }
-
-  .sveri_heading{
-
-  }
   .logo-images{
     margin-right: 150px !important;
     margin-left: 20px !important;
@@ -1291,8 +1287,6 @@ a {
     position: absolute;
     /* z-index: -1; */
   }
-
-  
 
   .navbar-toggler i {
     margin-top: 10px !important;
@@ -1313,9 +1307,12 @@ a {
     margin-left: 300px !important;
   }
   .header_wrapper .navbar {
-    padding-bottom: 35px !important;
+    padding-bottom: 0px !important;
   }
-
+  .navbar-brand{
+    height: 60px !important;
+    width: 60px !important;
+  }
   
 
   #themes p {
@@ -1360,6 +1357,11 @@ a {
   }
   #faq{
     padding: 10px !important;
+  }
+
+  .navbar-brand{
+    height: 20px !important;
+    width: 20px !important;
   }
   
 }
