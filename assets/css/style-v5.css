@@ -76,16 +76,14 @@ body {
 
 /************************ Banner ****************************/
 
-
-
-
-.logo-images img{
+.logo-images img {
   width: 100px;
   margin-left: 120px;
 }
 
-.logo-images{
-  margin-left: -150px;
+.logo-images {
+  /* margin-left: 120px; */
+  margin-top: 100px;
 }
 
 .home_container {
@@ -290,7 +288,6 @@ p {
   height: 0.9375rem !important;
 }
 
-
 /* Loader section Start */
 .loader_bg {
   position: fixed;
@@ -315,8 +312,6 @@ p {
   width: 70px;
 }
 
-
-
 /* Brochure Button Start */
 .brochure-btn {
   display: inline-block;
@@ -331,11 +326,9 @@ p {
 }
 
 .brochure-btn:hover {
-    /* background-color: #2bc0e4;  */
-    color: #fff;
+  /* background-color: #2bc0e4;  */
+  color: #fff;
 }
-
-
 
 /* NavBar Section Start  */
 
@@ -396,17 +389,18 @@ img {
   color: var(--secondary-color) !important;
 }
 
+
+
 .navbar.header-scrolled {
   position: fixed !important;
   top: 0 !important;
   left: 0 !important;
   width: 100% !important;
   z-index: 9999 !important;
-  background-color: rgba(255, 255, 255, 0.85) !important;
+  background-color: white !important;
   -webkit-animation: 500ms ease-in-out 0s normal none 1 running fadeInOut !important;
   animation: 500ms ease-in-out 0s normal none 1 running fadeInOut !important;
 }
-
 
 .button-discord {
   /* display: flex; */
@@ -439,6 +433,9 @@ img {
 .home_button-container a {
   text-decoration: none;
   color: #dfeaf0;
+}
+nav{
+  background: transparent !important;
 }
 
 .banner-button-style:before {
@@ -847,6 +844,22 @@ a {
   border-bottom-right-radius: 0.6rem !important;
 }
 
+.sveri_heading {
+  position: relative;
+  z-index: 999;
+  text-align: center;
+  width: 100%;
+  padding-top: 40px;
+  margin-bottom:  -100px;
+  /* margin-top: 0%; */
+  /* transform: translate(0%, -50%); */
+  font-size: 2.5rem;
+
+  color: white;
+  font-size: 50px;
+  font-weight: bolder;
+}
+
 /** Glimpses **/
 /* 
 .glimpse-title {
@@ -956,7 +969,6 @@ a {
   animation: scrollCards 10s linear infinite; 
 }  */
 
-
 @keyframes scrollCards {
   0% {
     transform: translateY(0);
@@ -968,16 +980,24 @@ a {
 
 /* Responsive styling */
 @media (min-width: 1199px) {
-.header_wrapper .navbar {
-  padding-bottom: 50px !important;
+  .header_wrapper .navbar {
+    padding-bottom: 50px !important;
+  }
+
+
+  /* .sveri_heading  {
+    font-size: 20px !important;
+  } */
 }
-.logo-images{
-  margin-right: 200px !important;
-}
-.sveri_heading{
-  margin-right: 200px !important;
-}
-}
+
+/* @media(max-width:1055px){
+  .sveri_heading{
+    width: 100%;
+    padding-top: 100px;
+    font-size: 40px;
+
+  }
+} */
 
 @media (max-width: 1199px) {
   .header_wrapper .navbar-expand-lg .navbar-nav {
@@ -1052,12 +1072,7 @@ a {
     margin-bottom: 0.375rem !important;
   }
 
-  .logo-images{
-    margin-right: 200px !important;
-  }
-  .sveri_heading{
-    margin-right: 200px !important;
-  }
+  
 }
 
 .navbar-brand img {
@@ -1077,6 +1092,7 @@ a {
 } */
 
 @media (max-width: 991px) {
+
   .navbar-brand img {
     height: 120px !important;
     width: 120px !important;
@@ -1130,8 +1146,7 @@ a {
     padding-top: 22.75rem !important;
   }
 
-  
-
+ 
   /* About Section Ends  */
 
   /* Service Section Start */
@@ -1156,11 +1171,11 @@ a {
     justify-content: center !important;
   } */
 
-  #prizes .hack-card{
+  #prizes .hack-card {
     margin-right: -100px !important;
     transition: all 1s ease-in-out !important;
   }
-  #prizes .prize-card{
+  #prizes .prize-card {
     margin-left: 100px !important;
   }
 
@@ -1177,28 +1192,34 @@ a {
 
   /* Service Section End  */
 
-  #prizes .hack-card:hover{
+  #prizes .hack-card:hover {
     transform: translateY(-10px);
   }
 
-
-
-  #prizes .hack-card:hover .hack-shadowOne{
+  #prizes .hack-card:hover .hack-shadowOne {
     transform: translateY(20px);
   }
 
-  #prizes .hack-card:hover .hack-shadowTwo{
+  #prizes .hack-card:hover .hack-shadowTwo {
     transform: translateY(40px);
   }
 
+  .logo-images{
+    margin-left: -70px !important;
+  }
+  .logo-images img{
+    margin-left: 50px !important;
+  }
 }
 
-
-
 @media (max-width: 767px) {
+ 
   .navbar-brand img {
     height: 120px !important;
     width: 120px !important;
+  }
+  #team .card{
+    margin-left: 60px !important;
   }
 
   .header_wrapper .navbar {
@@ -1229,18 +1250,16 @@ a {
     font-weight: 900;
   }
 
-
-  #prizes .service{
+  #prizes .service {
     width: 90% !important;
     margin-left: -70px !important;
   }
 
-  #prizes .hack-card{
+  #prizes .hack-card {
     margin-right: -100px !important;
     transition: all 1s ease-in-out !important;
-    
   }
-  #prizes .prize-card{
+  #prizes .prize-card {
     margin-left: 100px !important;
   }
 
@@ -1259,24 +1278,48 @@ a {
 
   /* Service Section End  */
 
-  #prizes .hack-card:hover{
+  #prizes .hack-card:hover {
     transform: translateY(-10px);
   }
 
-
-
-  #prizes .hack-card:hover .hack-shadowOne{
+  #prizes .hack-card:hover .hack-shadowOne {
     transform: translateY(20px);
   }
 
-  #prizes .hack-card:hover .hack-shadowTwo{
+  #prizes .hack-card:hover .hack-shadowTwo {
     transform: translateY(40px);
   }
-  .logo-images{
-    margin-right: 150px !important;
-    margin-left: 20px !important;
+  .logo-images .head_img1{
+
+    height: 71px !important; 
+    width: 132px !important;
+
+  }
+ 
+  .logo-images .head_img2{
+
+    height: 90px !important; 
+    width: 90px !important;
+
+  }
+ 
+  .logo-images .head_img3{
+
+    height: 95px !important; 
+    width: 100px !important;
+
+  }
+  .logo-images .head_img4{
+
+    height: 100px !important; 
+    width: 100px !important;
+
+  }
+  .sveri_heading{
+    font-size: 30px !important;
   }
 
+ 
 }
 
 @media (max-width: 599px) {
@@ -1288,6 +1331,11 @@ a {
     /* z-index: -1; */
   }
 
+  #team .card{
+    margin-left: 38px !important;
+    width: 80% !important;
+  }
+
   .navbar-toggler i {
     margin-top: 10px !important;
     margin-left: 384px !important;
@@ -1295,6 +1343,45 @@ a {
   #themes p {
     font-size: 20px !important;
     font-weight: 700 !important;
+  }
+
+  .logo-images .head_img1{
+
+    height: 61px !important; 
+    width: 92px !important;
+
+  }
+ 
+  .logo-images .head_img2{
+
+    height: 70px !important; 
+    width: 70px !important;
+
+  }
+ 
+  .logo-images .head_img3{
+
+    height: 75px !important; 
+    width: 80px !important;
+
+  }
+  .logo-images .head_img4{
+
+    height: 90px !important; 
+    width: 90px !important;
+
+  }
+
+  .logo-images{
+    margin-left: 0px !important;
+  }
+
+  .logo-images img{
+    margin-left: 30px !important;
+  }
+ 
+  .sveri_heading{
+    font-size: 30px !important;
   }
 
   /* section:not(#home) #particles-js {
@@ -1309,26 +1396,62 @@ a {
   .header_wrapper .navbar {
     padding-bottom: 0px !important;
   }
-  .navbar-brand{
+  .navbar-brand {
     height: 60px !important;
     width: 60px !important;
   }
-  
 
   #themes p {
     font-size: 20px !important;
     font-weight: 700 !important;
   }
-  .countdown-container{
+  .countdown-container {
     margin-right: 10px !important;
   }
-  .sveri_heading{
-    margin-left: -1000px !important;
+  /* .sveri_heading img{
+    margin-left: 1000px !important;
+  } */
+
+  .logo-images{
+    margin-left: -24px !important;
   }
+
+  .logo-images .head_img1{
+
+    height: 41px !important; 
+    width: 82px !important;
+
+  }
+ 
+  .logo-images .head_img2{
+
+    height: 50px !important; 
+    width: 50px !important;
+
+  }
+ 
+  .logo-images .head_img3{
+
+    height: 55px !important; 
+    width: 70px !important;
+
+  }
+  .logo-images .head_img4{
+
+    height: 70px !important; 
+    width: 70px !important;
+
+  }
+
+  .sveri_heading{
+    font-size: 30px !important;
+    margin-bottom: -150px !important;
+    padding-top: -100px !important;
+  }
+
 }
 
 @media (max-width: 383px) {
-  
   .navbar-toggler i {
     margin-left: 280px !important;
   }
@@ -1340,30 +1463,29 @@ a {
     font-size: 20px !important;
     font-weight: 700 !important;
   }
-  .about-container{
+  .about-container {
     padding: 15px;
   }
-  .countdown-container{
+  .countdown-container {
     padding: 15px;
   }
-  .container{
+  .container {
     padding: 15px !important;
   }
-  .swiper{
+  .swiper {
     padding: 15px;
   }
-  .team_wrapper{
+  .team_wrapper {
     padding: 15px !important;
   }
-  #faq{
+  #faq {
     padding: 10px !important;
   }
 
-  .navbar-brand{
+  .navbar-brand {
     height: 20px !important;
     width: 20px !important;
   }
-  
 }
 
 /* .lgx-photo-gallery-black .lgx-inner {
@@ -2202,126 +2324,123 @@ a {
   }
 }
 
-
-@media (max-width:550px){
+@media (max-width: 550px) {
   /* Layer 1 */
-.html {
-  transform: rotateY(0deg) translateZ(150px);
-}
-.css {
-  transform: rotateY(30deg) translateZ(150px);
-}
-.js {
-  transform: rotateY(60deg) translateZ(150px);
-}
-.react {
-  transform: rotateY(90deg) translateZ(150px);
-}
-.node {
-  transform: rotateY(120deg) translateZ(150px);
-}
-.python {
-  transform: rotateY(150deg) translateZ(150px);
-}
-.java {
-  transform: rotateY(180deg) translateZ(150px);
-}
-.ruby {
-  transform: rotateY(210deg) translateZ(150px);
-}
-.php {
-  transform: rotateY(240deg) translateZ(150px);
-}
-.docker {
-  transform: rotateY(270deg) translateZ(150px);
-}
-.aws {
-  transform: rotateY(300deg) translateZ(150px);
-}
-.git {
-  transform: rotateY(330deg) translateZ(150px);
-}
+  .html {
+    transform: rotateY(0deg) translateZ(150px);
+  }
+  .css {
+    transform: rotateY(30deg) translateZ(150px);
+  }
+  .js {
+    transform: rotateY(60deg) translateZ(150px);
+  }
+  .react {
+    transform: rotateY(90deg) translateZ(150px);
+  }
+  .node {
+    transform: rotateY(120deg) translateZ(150px);
+  }
+  .python {
+    transform: rotateY(150deg) translateZ(150px);
+  }
+  .java {
+    transform: rotateY(180deg) translateZ(150px);
+  }
+  .ruby {
+    transform: rotateY(210deg) translateZ(150px);
+  }
+  .php {
+    transform: rotateY(240deg) translateZ(150px);
+  }
+  .docker {
+    transform: rotateY(270deg) translateZ(150px);
+  }
+  .aws {
+    transform: rotateY(300deg) translateZ(150px);
+  }
+  .git {
+    transform: rotateY(330deg) translateZ(150px);
+  }
 
-/* Layer 2 */
-.html2 {
-  transform: rotateY(0deg) rotateX(45deg) translateZ(170px);
-}
-.css2 {
-  transform: rotateY(30deg) rotateX(45deg) translateZ(170px);
-}
-.js2 {
-  transform: rotateY(60deg) rotateX(45deg) translateZ(170px);
-}
-.react2 {
-  transform: rotateY(90deg) rotateX(45deg) translateZ(170px);
-}
-.node2 {
-  transform: rotateY(120deg) rotateX(45deg) translateZ(170px);
-}
-.python2 {
-  transform: rotateY(150deg) rotateX(45deg) translateZ(170px);
-}
-.java2 {
-  transform: rotateY(180deg) rotateX(45deg) translateZ(170px);
-}
-.ruby2 {
-  transform: rotateY(210deg) rotateX(45deg) translateZ(170px);
-}
-.php2 {
-  transform: rotateY(240deg) rotateX(45deg) translateZ(170px);
-}
-.docker2 {
-  transform: rotateY(270deg) rotateX(45deg) translateZ(170px);
-}
-.aws2 {
-  transform: rotateY(300deg) rotateX(45deg) translateZ(170px);
-}
-.git2 {
-  transform: rotateY(330deg) rotateX(45deg) translateZ(170px);
-}
+  /* Layer 2 */
+  .html2 {
+    transform: rotateY(0deg) rotateX(45deg) translateZ(170px);
+  }
+  .css2 {
+    transform: rotateY(30deg) rotateX(45deg) translateZ(170px);
+  }
+  .js2 {
+    transform: rotateY(60deg) rotateX(45deg) translateZ(170px);
+  }
+  .react2 {
+    transform: rotateY(90deg) rotateX(45deg) translateZ(170px);
+  }
+  .node2 {
+    transform: rotateY(120deg) rotateX(45deg) translateZ(170px);
+  }
+  .python2 {
+    transform: rotateY(150deg) rotateX(45deg) translateZ(170px);
+  }
+  .java2 {
+    transform: rotateY(180deg) rotateX(45deg) translateZ(170px);
+  }
+  .ruby2 {
+    transform: rotateY(210deg) rotateX(45deg) translateZ(170px);
+  }
+  .php2 {
+    transform: rotateY(240deg) rotateX(45deg) translateZ(170px);
+  }
+  .docker2 {
+    transform: rotateY(270deg) rotateX(45deg) translateZ(170px);
+  }
+  .aws2 {
+    transform: rotateY(300deg) rotateX(45deg) translateZ(170px);
+  }
+  .git2 {
+    transform: rotateY(330deg) rotateX(45deg) translateZ(170px);
+  }
 
-/* Layer 3 */
-.html3 {
-  transform: rotateY(0deg) rotateX(-45deg) translateZ(190px);
-}
-.css3 {
-  transform: rotateY(30deg) rotateX(-45deg) translateZ(190px);
-}
-.js3 {
-  transform: rotateY(60deg) rotateX(-45deg) translateZ(190px);
-}
-.react3 {
-  transform: rotateY(90deg) rotateX(-45deg) translateZ(190px);
-}
-.node3 {
-  transform: rotateY(120deg) rotateX(-45deg) translateZ(190px);
-}
-.python3 {
-  transform: rotateY(150deg) rotateX(-45deg) translateZ(190px);
-}
-.java3 {
-  transform: rotateY(180deg) rotateX(-45deg) translateZ(190px);
-}
-.ruby3 {
-  transform: rotateY(210deg) rotateX(-45deg) translateZ(190px);
-}
-.php3 {
-  transform: rotateY(240deg) rotateX(-45deg) translateZ(190px);
-}
-.docker3 {
-  transform: rotateY(270deg) rotateX(-45deg) translateZ(190px);
-}
-.aws3 {
-  transform: rotateY(300deg) rotateX(-45deg) translateZ(190px);
-}
-.git3 {
-  transform: rotateY(330deg) rotateX(-45deg) translateZ(190px);
-}
-
+  /* Layer 3 */
+  .html3 {
+    transform: rotateY(0deg) rotateX(-45deg) translateZ(190px);
+  }
+  .css3 {
+    transform: rotateY(30deg) rotateX(-45deg) translateZ(190px);
+  }
+  .js3 {
+    transform: rotateY(60deg) rotateX(-45deg) translateZ(190px);
+  }
+  .react3 {
+    transform: rotateY(90deg) rotateX(-45deg) translateZ(190px);
+  }
+  .node3 {
+    transform: rotateY(120deg) rotateX(-45deg) translateZ(190px);
+  }
+  .python3 {
+    transform: rotateY(150deg) rotateX(-45deg) translateZ(190px);
+  }
+  .java3 {
+    transform: rotateY(180deg) rotateX(-45deg) translateZ(190px);
+  }
+  .ruby3 {
+    transform: rotateY(210deg) rotateX(-45deg) translateZ(190px);
+  }
+  .php3 {
+    transform: rotateY(240deg) rotateX(-45deg) translateZ(190px);
+  }
+  .docker3 {
+    transform: rotateY(270deg) rotateX(-45deg) translateZ(190px);
+  }
+  .aws3 {
+    transform: rotateY(300deg) rotateX(-45deg) translateZ(190px);
+  }
+  .git3 {
+    transform: rotateY(330deg) rotateX(-45deg) translateZ(190px);
+  }
 }
 
 /* Team Section Starts Here  */
-
 
 .team_wrapper .card {
   display: flex;
@@ -2335,7 +2454,6 @@ a {
 
 .team_wrapper .card img {
   margin-top: 10px;
-  
 }
 
 .team_wrapper .team-info {
@@ -2491,24 +2609,10 @@ lord-icon {
 .address_footer {
   padding-right: 8rem;
 }
+/* 
+@media (max-width: 1400px) {
 
-@media(max-width:1800px)
-{
-  .sveri_heading{
-    margin-left: 220px !important;
-  }
-}
-
-@media(max-width:1400px)
-{
-  .sveri_heading{
-    margin-left: 220px !important;
-  }
-
-  .logo-images{
-    margin-left: 100px !important;
-  }
-}
+} */
 
 @media only screen and (max-width: 768px) {
   .address_footer {
@@ -2619,11 +2723,20 @@ lord-icon {
   }
 }
 
-@media (max-width:991px)
-{
-  .team_wrapper .card{
+@media (max-width: 991px) {
+  .team_wrapper .card {
     width: 400px !important;
-    
+  }
+}
+@media(max-width:379px){
 
+  #team .card{
+    width: 100% !important;
+  }
+
+}
+@media(max-width:374px){
+  #team .card{
+    margin-left: -3px !important;
   }
 }
