@@ -156,7 +156,7 @@ $(document).ready(function() {
         endtimeYear: 2025,
         endtimeMonth: 3,
         endtimeDate: 11,
-        endtimeHours: 0,
+        endtimeHours: 12,
         endtimeMinutes: 0,
         endtimeSeconds: 0
     });
