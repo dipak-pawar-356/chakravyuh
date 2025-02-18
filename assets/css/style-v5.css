@@ -813,8 +813,12 @@ a {
 }
 
 /** Gallery **/
-.collection {
-  height: 80vh; /* Adjust this value as needed (e.g., 50vh for half the viewport) */
+
+
+ .collection {
+  position: relative;
+  height: 100%;
+  height: 80vh;
   background-image: url(../img/new_assets/bg_2.jpg);
   background-color: #1e232e !important;
   background-position: center;
@@ -823,7 +827,7 @@ a {
   display: flex !important;
   justify-content: center !important;
   align-items: center !important;
-  padding: 20px; /* Optional: Add padding for inner space */
+  padding: 20px;
 }
 
 .collection .content {
@@ -834,7 +838,7 @@ a {
   border-radius: 0.7rem !important;
 
   overflow: hidden !important;
-  /* padding: .2rem; */
+
 }
 
 .content img {
@@ -851,14 +855,16 @@ a {
   width: 100%;
   padding-top: 40px;
   margin-bottom:  -100px;
-  /* margin-top: 0%; */
-  /* transform: translate(0%, -50%); */
   font-size: 2.5rem;
 
   color: white;
   font-size: 50px;
   font-weight: bolder;
-}
+} 
+
+
+
+
 
 /** Glimpses **/
 /* 
