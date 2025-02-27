@@ -1631,7 +1631,7 @@ a {
 .general-sponsor .sponsors-logo {
   background-color: #fff;
   margin: 15px 10px;
-  padding: 20px 5px;
+  padding: 20px 5px !important;
 
   align-content: center;
   text-align: center;
@@ -2552,6 +2552,15 @@ lord-icon {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+}
+
+.counter-container {
+  text-align: center;
+ 
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  display: inline-block;
 }
 
 /* Black overlay */
